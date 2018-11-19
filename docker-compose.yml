@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  service_1:
+    build:
+      context: ./ServerNo1
+    ports:
+    - "49162:3000"
+
+  service_2:
+    build:
+      context: ./ServerNo2
+    ports:
+    - "49163:4000"
