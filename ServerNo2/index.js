@@ -8,4 +8,4 @@ app.get('/',(req,res)=>{
     res.send('working server 2')
 });
 
-app.listen(port,()=>console.log("working on port : "+port));
+app.listen(port,()=>console.log(`working on port : ${port}`));

@@ -1,14 +1,24 @@
-version: '3.4'
+version: '2'
 
 services:
-  service_1:
+  service_11:
     build:
       context: ./ServerNo1
+    restart: always
+      
     ports:
     - "49162:3000"
 
-  service_2:
+  service_22:
     build:
       context: ./ServerNo2
+    restart: always
     ports:
     - "49163:4000"
+
+  service_33:
+    build:
+      context: ./ServerNo3
+    restart: always
+    ports:
+    - "49164:5000"
